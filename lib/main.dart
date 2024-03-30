@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
        home: Scaffold(
          appBar: AppBar(
            title: Text('Widget Play'),
@@ -20,30 +21,15 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-
-              Stack(
-                children: [
-                  Container(
-                    height: 140,
-                    width: 140,
-                    color: Colors.red,
-                  ),
-                  Container(
-                    height: 120,
-                    width: 120,
-                    color: Colors.green,
-                  ),
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.blue,
-                  ),
-
-
-
-
-                ],
-              )
+                 Padding(
+                   padding: const EdgeInsets.all(8.0),
+                   child: TextFormField(
+                     decoration: InputDecoration(
+                       hintText: 'Email',
+                       labelText: 'Email',
+                     ),
+                   ),
+                 )
 
             ],
           )
@@ -51,6 +37,9 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+
 
 
 
@@ -124,5 +113,81 @@ class MyApp extends StatelessWidget {
 //
 // ),
 // child: Center(child: Text('Container 1')),
+// ),
+// )
+
+
+
+//Stack Code
+
+
+// Stack(
+// children: [
+// Container(
+// height: 140,
+// width: 140,
+// color: Colors.red,
+// ),
+// Container(
+// height: 120,
+// width: 120,
+// color: Colors.green,
+// ),
+// Container(
+// height: 100,
+// width: 100,
+// color: Colors.blue,
+// ),
+// ],
+// )
+
+
+
+
+// Circular Avatar
+//
+// Center(
+// child: CircleAvatar(
+// radius: 100,
+// backgroundColor: Colors.red,
+// backgroundImage: NetworkImage('https://i.pinimg.com/564x/ff/46/56/ff4656a3b46e119b82459c1a97ea9565.jpg'),
+// ),
+// )
+
+
+
+//Devider
+
+//
+// Divider(
+// color: Colors.red,
+// thickness: 0.5,
+// ),
+//
+// SizedBox(
+// height: 100,
+// child:  VerticalDivider(
+// color: Colors.pink,
+// ),
+// ),
+//
+// Divider(
+// color: Colors.red,
+// thickness: 0.5,
+// ),
+
+
+
+//Rick Text Sign Up Code
+
+//
+// RichText(text: TextSpan(
+// text:  'Dont have an account',
+// style: Theme.of(context).textTheme.bodyText1,
+// children: [
+// TextSpan(text:  '  Sign Up ',  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+//
+// ]
+// // style:
 // ),
 // )
