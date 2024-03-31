@@ -24,6 +24,9 @@ class MyApp extends StatelessWidget {
                  Padding(
                    padding: const EdgeInsets.all(8.0),
                    child: TextFormField(
+                     keyboardType: TextInputType.emailAddress,
+                     cursorColor: Colors.pink,
+                     style: TextStyle(fontSize: 20, color: Colors.pink),
                      decoration: InputDecoration(
                        hintText: 'Email',
                        labelText: 'Email',
